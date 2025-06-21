@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Página 2</title>
+  <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+
+  <!-- Cabeçalho -->
+  <header class="Cabecalho">
+    <div class="logo-nome">
+      <img src="imagem/logo3.png" alt="Logo da empresa" class="Logo">
+      <h1 class="nome-impresa">Fênix</h1>
+    </div>
+    <div class="cabecalho-botoes">
+      <button class="botao-cabecalho">⋯</button>
+      <button class="botao-cabecalho">⚙️</button>
+      <button class="botao-cabecalho">🔔</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  
+
+    <div class="carrossel-manual">
+  <input type="radio" name="radio-btn" id="radio1" checked>
+  <input type="radio" name="radio-btn" id="radio2">
+  <input type="radio" name="radio-btn" id="radio3">
+  <input type="radio" name="radio-btn" id="radio4">
+
+  <div class="slides-manual">
+    <div class="slide-box">
+      <img src="imagem/carrossel.1.jpg" alt="Imagem 1">
+    </div>
+    <div class="slide-box">
+      <img src="imagem/carrossel.2.jpg" alt="Imagem 2">
+    </div>
+    <div class="slide-box">
+      <img src="imagem/carrossel.3.jpg" alt="Imagem 3">
+    </div>
+    <div class="slide-box">
+      <img src="imagem/carrossel.4.jpg" alt="Imagem 4">
+    </div>
+  </div>
+
+  <div class="navegacao-manual">
+    <label for="radio1" class="manual-btn"></label>
+    <label for="radio2" class="manual-btn"></label>
+    <label for="radio3" class="manual-btn"></label>
+    <label for="radio4" class="manual-btn"></label>
+  </div>
+</div>
+  
+
+  <!-- Rodapé -->
+  <footer class="Rodape">
+    <div class="rodape-topo">
+      <img src="imagem/logo3.png" alt="Logo da empresa" class="Logo-menor">
+      <span class="nome-menor">Fênix</span>
+    </div>
+    <div class="rodape-info">
+      <p>Email: fênix@gmail.com</p>
+      <p>CNPJ: 69.288.010/0001-10</p>
+      <p>Telefone: (11) 4002-8922</p>
+    </div>
+  </footer>
+
+  <!-- shinji pq sim -->
+  <div class="preco-imagem">
+    <img src="imagem/shinji.png" alt="Preço" class="img-preco">
+    <p class="legenda-preco">O Preço Tá Uma Sakanagem</p>
+  </div>
+
+  <!-- Botão fixo: Ir para Estoque -->
+  <a href="estoque.html" class="botao-estoque">Ir para Estoque</a>
+
+  <script>
+  let contador = 1;
+  setInterval(() => {
+    contador++;
+    if (contador > 4) contador = 1;
+    document.getElementById('radio' + contador).checked = true;
+  }, 5000); // troca a cada 5 segundos
+</script>
+
+</body>
+</html>
